@@ -1,8 +1,7 @@
-const CACHE_NAME = 'your-app-cache-v3';
+const CACHE_NAME = 'your-app-cache-v4';
 const urlsToCache = [
   '/',
   '/index.html',
-  '/favicon.ico',
   '/icons/app-icon-180x180.png',
   '/icons/app-icon-192x192.png',
 ];
