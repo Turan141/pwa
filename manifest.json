@@ -1,7 +1,7 @@
 {
-  "name": "Your App Name",
-  "short_name": "App",
-  "description": "Description of your app",
+  "name": "Binary Options",
+  "short_name": "Binary Options",
+  "description": "Binary Options",
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
