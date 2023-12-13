@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Worker Example</title>
+  <link rel="manifest" href="./manifest.json">
+</head>
+<body>
+  <h1>Service Worker Example</h1>
+  <!-- Your content here -->
+  <iframe src="https://demo-login.dukascopy.com/binary/mobile/" title="Example IFrame" width="600" height="400" frameborder="0"></iframe>
+
+  
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./service-worker.js')
+          .then(registration => {
+            console.log('Service Worker registered:', registration);
+          })
+          .catch(error => {
+            console.error('Service Worker registration failed:', error);
+          });
+      });
+    }
+  </script>
+</body>
+</html>
